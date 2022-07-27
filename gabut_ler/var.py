@@ -5,7 +5,7 @@ usia = int(input('Lalu masukan usia kamu disini : \n'))
 alamat = input('Lalu masukan alamat kamu disini : \n')
 hobi = input('Hobi kamu apa ? \n')
 
-os.system('cls')
+
 print('Hallo ,' ,nama)
 print('Oke jadi saya akan konfirmasi data kamu : \n')
 print('Nama kamu adalah : ' ,nama)
