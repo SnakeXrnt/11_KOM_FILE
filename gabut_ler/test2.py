@@ -3,4 +3,4 @@
 # create date : 2022-07-27 20:22:42
 # modify date : 2022-07-27 20:22:42
 
-wndnsn
+wndnsn = input("Enter your name: ")
