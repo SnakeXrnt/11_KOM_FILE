@@ -1,1 +1,1 @@
-nama = input('Masukan ')
+nama = input('')
