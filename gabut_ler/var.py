@@ -1,1 +1,1 @@
-nama = input('')
+nama = input()
