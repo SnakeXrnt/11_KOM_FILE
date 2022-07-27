@@ -1,4 +1,4 @@
-from os impor
+from os import *
 print ('Halo, selamat datang di aplikasi unfaedah')
 nama = input('Coba masukan nama kamu disini : \n')
 usia = int(input('Lalu masukan usia kamu disini : \n'))
