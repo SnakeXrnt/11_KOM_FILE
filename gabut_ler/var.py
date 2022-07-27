@@ -1,1 +1,1 @@
-print ('Halo, selamat datang di aplikasi unfa')
+print ('Halo, selamat datang di aplikasi unfaeda')
