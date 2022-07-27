@@ -1,1 +1,1 @@
-print ('Halo, selamat datang di tugas')
+print ('Halo, selamat datang di ')
