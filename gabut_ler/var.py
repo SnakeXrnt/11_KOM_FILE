@@ -1,1 +1,1 @@
-nama = i
+nama = input()
