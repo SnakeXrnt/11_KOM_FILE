@@ -1,1 +1,2 @@
-print ('Halo, selamat datang di aplikasi unfaeda')
+print ('Halo, selamat datang di aplikasi unfaedah')
+nama 
