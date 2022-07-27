@@ -1,1 +1,1 @@
-print ('Halo, siapakah nama anda ? ')
+print ('Halo, sia')
