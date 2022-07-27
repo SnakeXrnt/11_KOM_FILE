@@ -6,5 +6,5 @@ alamat = input('Lalu masukan alamat kamu disini : \n')
 hobi = input('Hobi kamu apa ? \n')
 
 os.system('cls')
-
+prin
 print('Oke jadi saya akan konfirmasi data kamu : \n')
