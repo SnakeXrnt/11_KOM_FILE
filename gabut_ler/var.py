@@ -14,5 +14,3 @@ print('Usia kamu adalah : ' ,usia)
 print('Alamat kamu adalah : ' ,alamat)
 print('Hobi kamu adalah : ' ,hobi)
 input('Tekan enter untuk melanjutkan')
-
-#author = Ethan Bastian
