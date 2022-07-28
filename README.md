@@ -48,9 +48,6 @@ or my email
 
 ethanbastian11@gmail.com 
 
-also check out my Club (yes i made a club) 
-
-[Insta (@techclub.igs)](https://www.instagram.com/techclub.igs/)
 
 Thank you for reading this lame README , hv a nice dayyy 
 
