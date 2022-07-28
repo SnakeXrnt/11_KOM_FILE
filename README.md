@@ -48,7 +48,6 @@ or my email
 
 ethanbastian11@gmail.com 
 
-
 Thank you for reading this lame README , hv a nice dayyy 
 
 Ethan signin outtt
