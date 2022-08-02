@@ -1,5 +1,5 @@
 from msilib.schema import LockPermissions
-from flask import *
+from flask import Flask , render_template
 
 app = Flask(__name__)
 
@@ -12,4 +12,4 @@ text = ["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos p
 
 @app.route("/one")
 def one():
-    return
+    return texts[0]
