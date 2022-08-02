@@ -8,4 +8,8 @@ def index():
     return render_template("index.html")
 
 
-text = [""]
+text = ["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos pariatur harum architecto fugit sunt quasi voluptatem iusto placeat, repudiandae, minus cupiditate asperiores exercitationem totam saepe eos ut repellendus veniam! Voluptatibus!"]
+
+@app.route("/one")
+def one():
+    return
