@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Multi Page</title>
+	<script type="text/javascript">
+		function load_page(page) {
+			const request = new XMLHttpRequest();
+			request.open("GET", `/${page}`);
+			request.onload = () => {
+				const response = request.respondText;
+				
+			};
+			request.send()
+		}
+	</script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="" class='nav-link-item' data-page="one">one</a></li>
-            <li><a href="" class='nav-link-item' data-page="two">two</a></li>
-            <li><a href="" class='nav-link-item' data-page="there">there</a></li>
-        </ul>
-    </nav>
+	<nav>
+		<ul>
+			<li><a href="" class="nav=link-item" data-page="one">One</a></li>
+			<li><a href="" class="nav=link-item" data-page="two">Two</a></li>
+			<li><a href="" class="nav=link-item" data-page="three">Three</a></li>
+		</ul>
+	</nav>
+	<section class="content">
+
+	</section>
 </body>
 </html>
