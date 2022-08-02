@@ -13,3 +13,14 @@ text = ["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos p
 @app.route("/one")
 def one():
     return texts[0]
+
+@app.route("/two")
+def one():
+    return texts[1]
+
+@app.route("/three")
+def one():
+    return texts[2]
+
+if __name__ == '__main__':
+    app.run(debug=True)
