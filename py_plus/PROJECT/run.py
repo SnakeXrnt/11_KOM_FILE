@@ -15,11 +15,11 @@ def one():
     return texts[0]
 
 @app.route("/two")
-def one():
+def two():
     return texts[1]
 
 @app.route("/three")
-def one():
+def three():
     return texts[2]
 
 if __name__ == '__main__':
