@@ -22,7 +22,7 @@
 			request.open("GET", `/${page}`);
 			request.onload = () => {
 				const response = request.respondText;
-				document.querySelector("content").innerHTML = response;
+				document.querySelector(".content").innerHTML = response;
 			};
 			request.send()
 		}
