@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] =
 
 
 @app.route('/')
