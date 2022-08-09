@@ -10,7 +10,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATION'] = FALSE
 db = SQLAlchemy(app)
 
-class Item(db.Model):\
+class Item(db.Model):
 	id = db.Column(db.Integer, primary_key=True , autoincrement=True)
 	status = db.Column(db.Boolean, nullable=False,default=True)
 
