@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 app = Flask(__name__)
 app.config['SECRET_KEY'] =
 app.config['SQLALCHEMY_DATABASE_URI'] =
+app.config['SQLALCHEMY_DATABASE_URI'] =
 db = SQLAlchemy(app)
 
 @app.route('/')
