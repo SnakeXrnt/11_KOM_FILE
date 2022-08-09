@@ -2,6 +2,7 @@ from pickle import FALSE
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.enviroment['SECRET_KEY']
