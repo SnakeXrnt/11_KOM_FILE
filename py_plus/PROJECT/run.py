@@ -3,8 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] =
-app.config['SQLALCHEMY_DATABASE_URI'] =
+app.config['SECRET_KEY'] = os.enviroment
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATION'] =
 db = SQLAlchemy(app)
 
