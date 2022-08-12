@@ -1,68 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Div Box</title>
-	<style type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Position</title>
+    <style>
 
-	body {
-		margin: 0px;
-	}
-		
-	div {
-		position: relative;
-		width: 100px;
-		height: 100px;
-		border: 5px solid black;
-		font-weight: bold;
-		text-align: center;
-		/*margin-top: 15px;
-		margin-right: 15px;*/
-	}
+        body{
+            width: auto;
+            height: 1vh;
+        }
 
-	div#d1 {
-		background-color: red;
-		left : 200px;
-	}
+        nav{
+            width: 100%;
+            height: 30px;
+            background-color: gray;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        
+        div {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        }
 
-	div#d2 {
-		background-color: green;
-		
-	}
-
-	div#d3 {
-		background-color: blue;
-		
-	}
-
-	div#d4 {
-		background-color: yellow;
-		
-	}
-
-
-
-	</style>
+        div.red {
+            position: relative;
+            background-color: red;
+            left: 30px;
+            top: 20px;
+        }
+        div.blue {
+            position: fixed;
+            background-color: blue;
+            top: 100px;
+        }
+        div.green {
+            position: absolute;
+            background-color: green;
+            left: 50%;
+            top: 50%;
+        }
+    </style>
 </head>
 <body>
-	<div id="d1">DIV #1</div>
-	<div id="d2">DIV #2</div>
-	<div id="d3">DIV #3</div>
-	<div id="d4">DIV #4</div>
-
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-	<script type="text/javascript">
-		console.log($('#d1').position().left, $('#d1').position().top);
-		console.log($('#d2').position().left, $('#d2').position().top);
-	</script>
-
-	<video width="320" height="240" controls>
-		<source src="movie.mp4" type="video/mp4">
-	</video>
-
-
-
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
 </body>
 </html>
