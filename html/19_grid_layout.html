@@ -4,9 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout</title>
+    <title>Table Layout</title>
+
+    <style>
+        body {
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			/* float: left; */
+			width: 100%;
+            /* height: 50px; */
+			background-color: #6d6875;
+		}
+
+        header > img {
+            height: 50px;
+        }
+
+		header > img, header > h1 {
+			margin-right: 10px;
+			display: inline;
+		}
+        header > nav {
+            background-color: #b5838d;
+        }
+
+        header nav ul.container {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+		footer {
+			width: 100%;
+			background-color: #e5989b;
+			text-align: center;
+			font-style: italic;
+		}
+
+        section.main {
+            width: 100%;
+            /* display: table; */
+            display: flex;
+            background-color: #ffb4a2;
+        }
+
+        /* article, aside.left, aside.right {
+            display: table-cell;
+        } */
+
+        aside.left, aside.right {
+            flex-shrink: 0;
+        }
+
+        aside.left {
+            order: -1;
+            width: 200px;
+			background-color: #b5838d;
+        }
+        
+
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1 style="text-align:center">Cv Anas Azhar</h1>
+        <nav>
+                <ul class="container">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+        </nav>
+    </header>
+    <section class="main">
+        
+
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati non consectetur minima accusantium excepturi laboriosam distinctio impedit et autem maxime nemo, alias aspernatur aliquam assumenda! Tenetur sint, iure vel ea molestias repellat saepe voluptatum assumenda qui totam! Enim iusto ipsam, incidunt blanditiis et recusandae adipisci repellendus voluptatibus temporibus vel ad molestias, earum quasi quaerat aspernatur aliquid, illo odio id? Sint impedit, odit provident quia officiis dolores ab necessitatibus eius eligendi alias molestias, exercitationem nostrum et. Praesentium aut odio aliquam temporibus vero ipsam totam vitae ab. Maxime odit recusandae minus, adipisci eveniet inventore dicta aperiam fugiat ullam reprehenderit ipsam, sunt omnis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati non consectetur minima accusantium excepturi laboriosam distinctio impedit et autem maxime nemo, alias aspernatur aliquam assumenda! Tenetur sint, iure vel ea molestias repellat saepe voluptatum assumenda qui totam! Enim iusto ipsam, incidunt blanditiis et recusandae adipisci repellendus voluptatibus temporibus vel ad molestias, earum quasi quaerat aspernatur aliquid, illo odio id? Sint impedit, odit provident quia officiis dolores ab necessitatibus eius eligendi alias molestias, exercitationem nostrum et. Praesentium aut odio aliquam temporibus vero ipsam totam vitae ab. Maxime odit recusandae minus, adipisci eveniet inventore dicta aperiam fugiat ullam reprehenderit ipsam, sunt omnis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati non consectetur minima accusantium excepturi laboriosam distinctio impedit et autem maxime nemo, alias aspernatur aliquam assumenda! Tenetur sint, iure vel ea molestias repellat saepe voluptatum assumenda qui totam! Enim iusto ipsam, incidunt blanditiis et recusandae adipisci repellendus voluptatibus temporibus vel ad molestias, earum quasi quaerat aspernatur aliquid, illo odio id? Sint impedit, odit provident quia officiis dolores ab necessitatibus eius eligendi alias molestias, exercitationem nostrum et. Praesentium aut odio aliquam temporibus vero ipsam totam vitae ab. Maxime odit recusandae minus, adipisci eveniet inventore dicta aperiam fugiat ullam reprehenderit ipsam, sunt omnis?</p>
+        </article>
+
+        <aside class="left">
+            <img src="https://fastly.4sqi.net/img/user/130x130/I5DJKRMFCQO2YFE3.jpg" alt="" , width="100" , height="100">
+            <h2>Anas Azhar</h2>
+            <hr>
+            <ul>
+                <li>Born : Tahun Baru</li>
+                <li>Kepintaran : Ngolai</li>
+                <li>Status : Single</li>
+                <li>Hobby : Cari Jodoh</li>
+
+            </ul>
+            <hr>
+
+        </aside>
+        
+
+    </section>
+    <footer>
+        <p>
+            Copyright information usually goes down here.
+        </p>
+    </footer>
 </body>
 </html>
