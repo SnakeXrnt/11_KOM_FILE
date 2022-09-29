@@ -48,6 +48,12 @@ header nav ul li a {
     font-size: ;
 }
 
+.menu-tooggle {
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+}
 .menu-toggle span{
     display: block;
     width: 30px;
