@@ -1,9 +1,4 @@
-/**
- * @author Ethan Bastian 11 Mipa 2
- * @email ethanbastian11@gmail.com
- * @create date 2022-09-29 16:55:06
- */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Roboto+Condensed:ital@1&family=Square+Peg&display=swap');
 
 * {
     margin: 0;
@@ -11,7 +6,7 @@
 }
 
 body {
-    font-family: 'Alkalami', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     overflow-x: hidden;
 }
 
@@ -24,17 +19,6 @@ header nav{
     align-items: center;
 }
 
-.btn-login {
-    background-color: brown;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 header nav ul {
     display: flex;
     list-style: none;
@@ -45,24 +29,55 @@ header nav ul {
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: ;
+    font-size: 0.8rem;
 }
 
-.menu-toggle {
+header nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.btn-login {
+    background-color: white;
+    color: red;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 30px;
+    transition: 2s;
+}
+
+.btn-login:hover {
+    transform: scale(1.2);
+}
+
+.menu-toggle{
     display: none;
 }
 
-.menu-tooggle {
-    display: flex;
-    flex-direction: column;
-    height: 15px;
-    justify-content: space-between;
-}
 .menu-toggle span{
     display: block;
-    width: 30px;
-    height: 5px;
-    background-color: white;
-    margin: 5px;
-    border-radius: 5px;
+    width: 18px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+section.hero {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: gray url('../static/img/HERO.jpg');
+}
+
+@media screen and (max-width: 576px) {
+    
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        height: 15px;
+        justify-content: space-between;
+    }
 }
