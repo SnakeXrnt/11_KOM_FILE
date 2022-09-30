@@ -72,6 +72,8 @@ section.hero {
     background: gray url('../static/img/sambo.jpeg') center / cover no-repeat;
 }
 
+section
+
 @media screen and (max-width: 576px) {
     
     .menu-toggle {
