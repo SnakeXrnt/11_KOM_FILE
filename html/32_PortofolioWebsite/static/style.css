@@ -91,3 +91,13 @@ section.hero .hero-content h1{
     margin: 20px 10px 20px;
     font-size: 3em;
 }
+
+section.hero .hero-content h3:after{
+    content: "For best criminals in 2022"
+}
+
+section.hero .hero-content h3 {
+    color: white;
+    margin: 20px 10px 20px;
+    font-size: 1.5em;
+}
