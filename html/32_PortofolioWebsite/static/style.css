@@ -90,7 +90,7 @@ section.hero .hero-content h1{
     color: brown;
     margin: 20px 10px 20px;
     font-size: 3em;
-    border-width: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -98,4 +98,5 @@ section.hero .hero-content h3 {
     color: white;
     margin: 20px 10px 20px;
     font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
 }
