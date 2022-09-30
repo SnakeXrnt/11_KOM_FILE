@@ -69,7 +69,7 @@ section.hero {
     display: flex;
     height: 100vh;
     width: 100%;
-    background: gray url('../static/img/HERO.jpg');
+    background: gray url('../static/img/HERO.jpg') center / cover no-repeat;
 }
 
 @media screen and (max-width: 576px) {
