@@ -1,3 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.nav-link').forEach(function(link) {
-}
+document.addEventListener('DOMContentLoaded', () => {
+
+    document.querySelector('.menu-toggle').
+    addEventListener('click', function(){
+        document.querySelector('.menu-nav').
+        classList.toggle('clicked');
+    })
+})
