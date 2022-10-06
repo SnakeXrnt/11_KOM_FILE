@@ -85,6 +85,7 @@ section.hero .hero-content {
         background-color: rgb(133, 133, 133, 1);
         height: 100vh;
         top: 0px;
+        right:0px;
     }
     
     .menu-toggle {
