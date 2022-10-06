@@ -80,7 +80,8 @@ section.hero .hero-content {
 
     header nav il.menu-nav {
         flex-direction: column;
-        background-color: ;
+        background-color: rgba(133, 133, 133, 0.5);
+        height: 100vh;
     }
     
     .menu-toggle {
