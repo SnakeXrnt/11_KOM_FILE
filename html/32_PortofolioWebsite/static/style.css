@@ -78,7 +78,7 @@ section.hero .hero-content {
 
 @media screen and (max-width: 576px) {
 
-    header nav il.menu-nav {
+    header nav ul.menu-nav {
         position: absolute;
         flex-direction: column;
         background-color: rgba(133, 133, 133, 1);
