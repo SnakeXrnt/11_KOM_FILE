@@ -83,6 +83,7 @@ section.hero .hero-content {
         flex-direction: column;
         background-color: rgba(133, 133, 133, 1);
         height: 100vh;
+        top: 0px;
     }
     
     .menu-toggle {
