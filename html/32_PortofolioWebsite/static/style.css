@@ -81,7 +81,7 @@ section.hero .hero-content {
     header nav ul.menu-nav {
         position: absolute;
         flex-direction: column;
-        background-color: rgba(133, 133, 133, 1);
+        background-color: rgb(133, 133, 133, 1);
         height: 100vh;
         top: 0px;
     }
