@@ -77,6 +77,11 @@ section.hero .hero-content {
 }
 
 @media screen and (max-width: 576px) {
+
+    header nav il.menu-nav {
+        flex-direction: column;
+        background-color: ;
+    }
     
     .menu-toggle {
         display: flex;
