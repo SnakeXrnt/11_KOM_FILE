@@ -69,7 +69,7 @@ section.hero {
     display: flex;
     height: 100vh;
     width: 100%;
-    background: gray url('.../static/img/sambo.jpeg') center / cover no-repeat;
+    background: gray url('/32_portofolioWebsite/static/img/T.Muller.jpg') center / cover no-repeat;
     flex-direction: column;
     justify-content: center;
 }
