@@ -114,9 +114,7 @@ section.hero .hero-content h1 {
     font-size: 3em;
 }
     
-section.hero .hero-content h3::after {
-    content: "for 2024";
-}
+
 
 section.hero .hero-content h3{
     color: brown;
