@@ -1,294 +1,147 @@
-.macbookpro16"
-{
-width:1920px;
-height:1080px;
-padding:0px;
-background-color:#ffffff;
-position:absolute;
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
-.starttouseourpossystem
-{
-text-align:left;
-vertical-align:text-top;
-font-size:66px;
-font-family:Inter;
-line-height:auto;
-color:#000000;
-left:77px;
-top:423px;
-position:absolute;
+
+body {
+    font-family: 'Inter Tight', sans-serif;;
+    overflow-x: hidden; 
 }
-.letssigninhere!
-{
-text-align:left;
-vertical-align:text-top;
-font-size:66px;
-font-family:Inter;
-left:77px;
-top:503px;
-width:549px;
-height:80px;
-position:absolute;
-line-height:auto;
-color:#000000;
+
+header nav {
+    display: flex;
+    background: rgba(133, 47, 13, 0.8);
+    color: rgb(255, 255, 255);
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
 }
-.emailinput
-{
-width:596px;
-height:58px;
-top:600px;
-left:82px;
-position:absolute;
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
 }
-.rectangle2
-{
-border-radius:17px;
-width:596px;
-height:58px;
-background-color:#d9d9d9;
-top:600px;
-left:82px;
-position:absolute;
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em
 }
-.enteryouremailtogetstarted
-{
-text-align:left;
-vertical-align:text-top;
-font-size:36px;
-font-family:Inter;
-left:92px;
-top:607px;
-width:519px;
-height:44px;
-position:absolute;
-line-height:auto;
-color:rgba(0, 0, 0, 0.4000000059604645);
+
+header nav ul li a:hover{
+    color: rgb(250, 240, 255);
+    text-decoration: none;
+    font-size: 0.8em;
 }
-.buttoninput
-{
-width:219px;
-height:55px;
-top:603px;
-left:723px;
-position:absolute;
+
+.btn-login {
+    background: white;
+    color: brown;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 30px;
+    transition: 2s;
 }
-.rectangle3
-{
-border-radius:36px;
-width:219px;
-height:55px;
-background-color:#d9d9d9;
-top:603px;
-left:723px;
-position:absolute;
+
+.btn-login:hover {
+    transform: scale(1.2);
 }
-.letsgo!
-{
-text-align:left;
-vertical-align:text-top;
-font-size:36px;
-font-family:Inter;
-left:761px;
-top:608px;
-width:142px;
-height:44px;
-position:absolute;
-line-height:auto;
-color:#000000;
+
+.menu-toggle{
+    display: none;
 }
-.menubar
-{
-width:1920px;
-height:100px;
-position:absolute;
+
+.menu-toggle span{
+    display: block;
+    width: 18px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
 }
-.topbar
-{
-width:1920px;
-height:100px;
-background-color:#d9d9d9;
-border:1px solid #000000;
+
+section.hero {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: gray url('/Project/static/img/sambo.jpeg') center / cover no-repeat;
+    flex-direction: column;
+    justify-content: center;
 }
-.middlebuttongroup
-{
-width:1000px;
-height:52px;
-left:460px;
-top:26px;
-position:absolute;
+
+section.hero .hero-content {
+    margin-left: 10%;
 }
-.aboutus
-{
-width:208px;
-height:49px;
-top:26px;
-left:1252px;
-position:absolute;
+
+@media screen and (max-width: 576px) {
+
+    header nav ul.menu-nav {
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        background-color: rgba(133, 47, 13, 0.8);
+        height: 100vh;
+        top: 0;
+        right: 0;
+        padding-left: 10px;
+        transform: translateX(100%);
+    }
+
+    header nav ul.menu-nav.clicked {
+        transform: translateX(0);
+    }
+
+    header nav ul.menu-nav li a {
+        font-size: 2rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        height: 15px;
+        justify-content: space-between;
+      }
 }
-.rectangle1
-{
-width:208px;
-height:49px;
-background-color:#d9d9d9;
-border:1px solid #000000;
-top:26px;
-left:1252px;
-position:absolute;
+
+section.hero .hero-content h1 {
+    color: brown;
+    margin: 20px 0px 20px;
+    font-size: 3em;
 }
-.aboutus2
-{
-text-align:left;
-vertical-align:text-top;
-font-size:27px;
-font-family:Inter;
-left:1299px;
-top:34px;
-width:115px;
-height:33px;
-position:absolute;
-line-height:auto;
-color:#000000;
+    
+section.hero .hero-content h3::after {
+    content: "for 2024";
 }
-.services
-{
-width:208px;
-height:49px;
-top:26px;
-left:988px;
-position:absolute;
+
+section.hero .hero-content h3{
+    color: brown;
+    margin: 20px 0px 20px;
+    font-size: 1.25em;
 }
-.rectangle12
-{
-width:208px;
-height:49px;
-background-color:#d9d9d9;
-border:1px solid #000000;
-top:26px;
-left:988px;
-position:absolute;
+
+section.hero .hero-content .hero-form {
+    width: 200px;
+    max-width: 100%;
 }
-.services2
-{
-text-align:left;
-vertical-align:text-top;
-font-size:27px;
-font-family:Inter;
-left:1037px;
-top:34px;
-width:110px;
-height:33px;
-position:absolute;
-line-height:auto;
-color:#000000;
+
+section.hero .hero-content .hero-form input:first-child {
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid brown;
+    border-radius: 30px;
+    margin-bottom: 10px;
 }
-.pricing
-{
-width:208px;
-height:49px;
-top:29px;
-left:724px;
-position:absolute;
-}
-.rectangle13
-{
-width:208px;
-height:49px;
-background-color:#d9d9d9;
-border:1px solid #000000;
-top:29px;
-left:724px;
-position:absolute;
-}
-.pricing2
-{
-text-align:left;
-vertical-align:text-top;
-font-size:27px;
-font-family:Inter;
-left:784px;
-top:37px;
-width:88px;
-height:33px;
-position:absolute;
-line-height:auto;
-color:#000000;
-}
-.home
-{
-width:208px;
-height:49px;
-top:29px;
-left:460px;
-position:absolute;
-}
-.rectangle14
-{
-width:208px;
-height:49px;
-background-color:#d9d9d9;
-border:1px solid #000000;
-top:29px;
-left:460px;
-position:absolute;
-}
-.home2
-{
-text-align:left;
-vertical-align:text-top;
-font-size:27px;
-font-family:Inter;
-left:526px;
-top:37px;
-width:76px;
-height:33px;
-position:absolute;
-line-height:auto;
-color:#000000;
-}
-.button3
-{
-width:208px;
-height:49px;
-top:26px;
-left:1675px;
-position:absolute;
-}
-.rectangle15
-{
-border-radius:30px;
-width:208px;
-height:49px;
-background-color:#d9d9d9;
-border:1px solid #000000;
-top:26px;
-left:1675px;
-position:absolute;
-}
-.login
-{
-text-align:left;
-vertical-align:text-top;
-font-size:27px;
-font-family:Inter;
-left:1744px;
-top:34px;
-width:70px;
-height:33px;
-position:absolute;
-line-height:auto;
-color:#000000;
-}
-.ethnabpossystem
-{
-text-align:left;
-vertical-align:text-top;
-font-size:35px;
-font-family:Inter;
-left:32px;
-top:29px;
-width:308px;
-height:42px;
-position:absolute;
-line-height:auto;
-color:#000000;
+
+section.hero .hero-content .hero-form input:last-child {
+    padding: 10px 30px;
+    border: 2px solid brown;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    background: brown;
+    color: white;
 }
