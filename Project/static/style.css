@@ -73,6 +73,8 @@ section.hero {
     background: gray url('/Project/static/img/Background.png') center / cover no-repeat;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 section.hero .hero-content {
