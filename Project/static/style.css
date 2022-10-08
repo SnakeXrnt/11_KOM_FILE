@@ -141,5 +141,5 @@ section.hero .hero-content .hero-form input:last-child {
     border-radius: 30px;
     margin-bottom: 10px;
     background: brown;
-    color: white;
+    color: rgb(255, 0, 0);
 }
