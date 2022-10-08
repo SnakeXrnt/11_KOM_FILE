@@ -130,7 +130,7 @@ section.hero .hero-content .hero-form {
 section.hero .hero-content .hero-form input:first-child {
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid brown;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 30px;
     margin-bottom: 10px;
 }
