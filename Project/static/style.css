@@ -12,7 +12,7 @@ body {
 
 header nav {
     display: flex;
-    background:#F5BEA9;
+    background:#000000;
     color: #954a54;
     justify-content: space-around;
     height: 50px;
