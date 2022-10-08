@@ -39,7 +39,7 @@ header nav ul li a:hover{
 }
 
 .btn-login {
-    background: white;
+    background: rgb(255, 0, 0);
     color: brown;
     text-decoration: none;
     border: 2px solid transparent;
