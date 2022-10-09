@@ -149,7 +149,7 @@ section.hero .hero-content .hero-form input:last-child {
 
 section.hero .hero-content .hero-whatsapp input:first-child {
     left: 10px;
-    top: 50px;
+    top: 100px;
     padding: 10px 30px;
     border: 2px solid rgb(169, 50, 50);
     border-radius: 30px;
