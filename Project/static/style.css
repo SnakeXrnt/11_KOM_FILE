@@ -87,7 +87,7 @@ section.hero .hero-content {
         flex-direction: column;
         justify-content: space-evenly;
         position: absolute;
-        background-color: rgba(0, 95, 143, 0.5);
+        background-color: rgba(0, 95, 143, 1);
         height: 100vh;
         top: 0;
         right: 0;
