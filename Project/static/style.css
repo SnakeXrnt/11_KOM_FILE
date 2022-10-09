@@ -154,6 +154,7 @@ section.hero .hero-content .hero-button input:first-child {
     margin-bottom: 10px;
     background: #219ebc;
     color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 section.hero .hero-content .hero-button input:last-child {
