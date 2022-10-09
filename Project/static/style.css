@@ -155,3 +155,12 @@ section.hero .hero-content .hero-form .hero-button input:last-child {
     background: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
 }
+
+section.hero .hero-content .hero-form .hero-button input:last-child {
+    padding: 10px 30px;
+    border: 2px solid rgb(169, 50, 50);
+    border-radius: 30px;
+    margin-bottom: 10px;
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
