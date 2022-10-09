@@ -147,7 +147,7 @@ section.hero .hero-content .hero-form input:last-child {
     color: rgb(255, 255, 255);
 }
 
-section.hero .hero-content .hero-form input:second-child {
+section.hero .hero-content .hero-whastapp input:last-child {
     padding: 10px 30px;
     border: 2px solid rgb(169, 50, 50);
     border-radius: 30px;
