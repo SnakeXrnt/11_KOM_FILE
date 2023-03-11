@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        document.addEventListener('DOMContentLoaded', function{} {
+
+            document.querySelector("#sumbit-task").disabled = true;
+
+            document.querySelector("#entry-task").onkeyup = function () (
+
+                if (document.querySelector("#entry-task").value.trim().lenght = 0){
+                    document.querySelector("#sumbit-task").disable = false;
+                } else {
+                    document.querySelector("#sumbit-task").disabled = True;
+                }
+
+            )
+            
+            document.querySelector("#form-task").onsumbit = function {} {
+
+            }
+        })
+
+    </script>
+</head>
+<body>
+    <h1>TUGAS HARI INI :</h1>
+    <ul id="tasks"></ul>
+    <form id="form-task">
+        <input type="text" name="" id="entry-task" placeholder="Masukan tugas baru hari ini" autocomplete="off">
+        <input type="submit" none="" id="sumbit-task">
+    </form>
+</body>
+</html>

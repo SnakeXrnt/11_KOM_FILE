@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style type="text/css">
+        /* Add some styles to the body element */
+        body {
+        font-family: sans-serif;
+        background-color: #f2f2f2;
+        padding: 20px;
+        }
+
+        /* Style the h1 element */
+        h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        }
+
+        /* Style the ul element */
+        ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+
+        /* Style the li elements */
+        li {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        }
+
+        /* Style the input element */
+        input[type="text"] {
+        padding: 10px;
+        width: 70%;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+        font-size: 16px;
+        }
+
+        /* Style the button element */
+        button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        }
+
+        /* Style the button element on hover */
+        button:hover {
+        background-color: #3e8e41;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+ 
+        class App extends React.Component {
+ 
+            constructor(props){
+                super(props);
+                this.state = {
+                    tasks : ["task-one", "task-two", "task-three"],
+                    input : ""
+                }
+            }
+ 
+            render = () => {
+                return (
+                    <div>
+                        <h1>Todo List</h1>
+                        <ul>
+                            {this.state.tasks.map((task, i) => (
+                                <li key={i}>
+                                    {i+1}. {task}
+                                    <button onClick={() => this.deleteTask(i)} style={{float: "right"}}>Delete</button>
+                                </li>
+                            ))}
+                        </ul>
+
+                        <div>
+                            <input type="text" value={this.state.input} onChange={this.handleInput}/>
+                            <button onClick={this.addTask}>Add</button>
+                        </div>
+                        <p>Number of tasks : {this.state.tasks.length}</p>
+                    </div>
+                )
+            }
+
+ 
+            handleInput = event => {
+                this.setState({
+                    input : event.target.value
+                })
+            }
+ 
+            addTask = () => {
+                this.setState(state => ({
+                    tasks : [...state.tasks, state.input],
+                    input : ""
+                }))
+            }
+
+            deleteTask = index => {
+            console.log(index);
+            this.setState(state => {
+                const tasks = [...state.tasks];
+                tasks.splice(index, 1);
+                return {
+                tasks: tasks
+                }
+            })
+            }
+        }
+ 
+        ReactDOM.render(<App />, document.getElementById("app"));
+    </script>
+</body>
+</html>

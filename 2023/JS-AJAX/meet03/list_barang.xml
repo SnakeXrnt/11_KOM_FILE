@@ -1,0 +1,22 @@
+<BARANG>
+    <KOMPOR>
+        <NAMA>RINNAI KOMPOR 712 BGX</NAMA>
+        <HARGA>750,000</HARGA>
+    </KOMPOR>
+    <KOMPOR>
+        <NAMA>RINNAI KOMPOR 512A</NAMA>
+        <HARGA>500,000</HARGA>
+    </KOMPOR>
+    <LAMPU>
+        <NAMA>BEEBOT MK1</NAMA>
+        <HARGA>2,500,000</HARGA>
+    </LAMPU>
+    <LAMPU>
+        <NAMA>BEEBOT ML2</NAMA>
+        <HARGA>2,250,000</HARGA>
+    </LAMPU>
+    <LAMPU>
+        <NAMA>PRO7 755F</NAMA>
+        <HARGA>3,500,000</HARGA>
+    </LAMPU>
+</BARANG>

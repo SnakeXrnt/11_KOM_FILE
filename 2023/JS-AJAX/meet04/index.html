@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIxer.io</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sumbit-btn {
+            font-size: 1.75em;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded",() => {
+
+            const key = "";
+
+            document.getElementById("sumbit-btn").onclick = function(){
+
+                const request = new XMLHttpRequest();
+                request.onload = function() {
+                    const data = JSON.parse(this.responseText);
+                    let ulElement = document.createElement("ul");
+                    Object.keys(data.rates).forEach((key) => {
+                        let liElement = document.createElement("li");
+                        liElement.innerHTML = `${key} : ${data.rates[key]}`;
+                        ulElement.appendChild(liElement);
+                    })
+                    document.querySelector(".content-result").appendChild(ulElement);
+
+                }
+                request.open("GET",`http://data.fixer.io/api/latest?access_key=${key}`);
+                request.send();
+
+                return false;
+            }
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <input type="text" name="currency" id="currency_entry">
+            <input type="sumbit" value="FInd CUrrency" id="sumbit-btn">
+        </form>
+        <dic class="content-result"></dic>
+    </div>
+</body>
+</html>

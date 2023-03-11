@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        if (!localStorage.getItem("counter"))  localStorage.setItem("counter", 0);
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            let counter = localStorage.getItem("counter");
+            document.querySelector("#counter").innerHTML = counter;
+
+            document.querySelector("#reset-btn").addEventListener("click", function() {
+                localStorage.clear();
+                counter = 0;
+                document.querySelector("#counter").innerHTML = counter;
+            });
+
+            document.querySelector("#start-btn").addEventListener("click", function() {
+                counter = 0;
+                document.querySelector("#counter").innerHTML = counter;
+            });
+
+
+
+            function counting() {
+                counter++;
+                document.querySelector("#counter").innerHTML = counter;
+                localStorage.setItem("counter", counter);
+            }
+            setInterval(counting, 1000)
+        });
+        
+    </script>
+</head>
+<body>
+    <h1 id="counter"></h1>
+    <button id="reset-btn">CLear local storage</button>
+    <button id="start-btn">Start</button>
+</body>
+</html>

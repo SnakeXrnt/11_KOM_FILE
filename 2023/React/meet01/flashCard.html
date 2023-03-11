@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Flash Kard</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+            background-color: #1ddd29;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+ 
+        class Game extends React.Component {
+
+        constructor(props) {
+            super(props);
+            this.state = {
+                num1: Math.floor((Math.random() * 10)),
+                num2: Math.floor((Math.random() * 10)),
+                opr: "+",
+                oprlist: ["+", "-", "/", "*"],
+                color: "black",
+                score: 0,
+                response: ""
+            }
+        }
+
+        render = () => {
+            const { score, color, num1, num2, opr, response } = this.state;
+
+            if (score < 0) {
+                return (
+                    <div className="container" style={{ backgroundColor: "red" }}>
+                        <h1>YOU LOSE!</h1>
+                    </div>
+                )
+            }
+
+            return (
+                <div className="container" style={{ 'color': color }}>
+                    <h1>{num1} {opr} {num2} = ?</h1>
+                    <br></br>
+                    <input type="text" value={response} placeholder="Put your answer here" onChange={this.updateResponse} onKeyPress={this.checkResponse} />
+                    <br></br>
+                    <p>Your score is : {score}</p>
+                </div>
+            )
+        }
+
+        updateResponse = event => {
+            this.setState({
+                response: event.target.value
+            })
+        }
+
+        checkResponse = event => {
+            if (event.key == "Enter") {
+                if (JSON.parse(this.state.response) == this.state.num1 + this.state.num2 && this.state.opr == "+") {
+
+                    this.setState(state => ({
+                        score: state.score + 1,
+                        response: "",
+                        num1: Math.floor((Math.random() * 10)),
+                        num2: Math.floor((Math.random() * 10)),
+                        color: 'black'
+                    }))
+
+                } else {
+
+                    this.setState(state => ({
+                        score: state.score - 1,
+                        response: "",
+                        num1: Math.floor((Math.random() * 10)),
+                        color: 'red',
+                        num2: Math.floor((Math.random() * 10))
+                    }))
+
+                }
+            }
+        }
+        }
+
+ 
+        class App extends React.Component {
+            render = () =>{
+                return(
+                    <Game />
+                )
+            }
+        }
+ 
+        ReactDOM.render(<App/>, document.getElementById("app"))
+ 
+    </script>
+</body>
+</html>

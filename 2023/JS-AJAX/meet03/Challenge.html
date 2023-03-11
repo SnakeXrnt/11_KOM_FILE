@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHallenge AJAX XML</title>
+    <style>
+    table,th,td {
+        border : 3px solid blue;
+        border-collapse: collapse;
+      }
+      th,td {
+        padding: 5px;
+      }
+
+    </style>
+
+    <script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            myFunction(this);
+            }
+        };
+        xhttp.open("GET", "list_barang.xml", true);
+        xhttp.send();
+    }
+
+    function myFunction(xml) {
+        var i;
+        var xmlDoc = xml.responseXML;
+        var table="<tr><th>NAMA BARANG</th><th>HARGA</th></tr>";
+        var x = xmlDoc.getElementsByTagName("KOMPOR");
+        for (i = 0; i <x.length; i++) { 
+            table += "<tr><td>" +
+            x[i].getElementsByTagName("NAMA")[0].childNodes[0].nodeValue +
+            "</td><td>" +
+            x[i].getElementsByTagName("HARGA")[0].childNodes[0].nodeValue +
+            "</td></tr>"; 
+            var i;
+            }
+        
+        var p;
+        var table2="<tr><th>NAMA BARANG</th><th>HARGA</th></tr>";
+        var c = xmlDoc.getElementsByTagName("LAMPU");
+        for (p = 0; p <c.length; p++) { 
+            table2 += "<tr><td>" +
+            c[p].getElementsByTagName("NAMA")[0].childNodes[0].nodeValue +
+            "</td><td>" +
+            c[p].getElementsByTagName("HARGA")[0].childNodes[0].nodeValue +
+            "</td></tr>"; 
+        }
+        document.getElementById("demo").innerHTML = table;
+        document.getElementById("demo2").innerHTML = table2;
+        document.getElementById("kompor").innerHTML = "KOMPOR";
+        document.getElementById("lampu").innerHTML = "LAMPU";
+
+    }
+
+
+
+    
+    </script>
+
+</head>
+<body>
+    
+    <h1>List barang Toko Terang Jaya Palembang</h1>
+
+    <button type="button" onclick="loadDoc()">Load harga kompor</button>
+    <br><br>
+    <h1 id="kompor"></h1>
+    <table id="demo"></table>
+    <br><br>
+    <h1 id="lampu"></h1>
+    <table id="demo2"></table>
+</body>
+</html>
