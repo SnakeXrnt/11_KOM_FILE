@@ -14,13 +14,13 @@ Laptop   : Lenovo s340-14API
 
 Procesor : AMD Ryzen 5 3500U 
 
-Ram      : 12GB (upgraded from 8GB) 
+Ram      : 20GB (upgraded from 12GB) 
 
 VGA      : AMD VEGA 8 iGPU
 
 OS       : Windows 11 Ghost spectre
 
-Secondary OS : Ububtu 20.04 Gnome
+Secondary OS : Ububtu 20.04 bspwm
 
 
 
