@@ -2,7 +2,7 @@
 print("Hello Grade 11")
 ```
 
-<h1 align="center">你好我是 Ethan Bastian 沈裕恒</h1>
+<h1 align="center">你好,我是 Ethan Bastian (沈裕恒)</h1>
 <h3 align="center">Just a normal kid that likes to experiment about computers and stuffs</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=snakexrnt&label=Profile%20views&color=0e75b6&style=flat" alt="snakexrnt" /> </p>
