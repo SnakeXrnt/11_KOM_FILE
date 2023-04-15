@@ -1,0 +1,102 @@
+.header {
+    width: 100%;
+    height: 65px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 15px 20px;
+    background-image:linear-gradient(to right, #672280 , #A626D3) ;
+    color: white;
+}
+
+.dark--mode {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.header--image {
+    height: 100%;
+}
+
+.header--title {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.header--project {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.header--toggle--darkmode {
+    position: relative;
+    width: 38px;
+    height: 20px;
+    border-radius: 12px;
+    border: 1px var(--dark-color) solid;
+    background-color: var(--dark-color);
+}
+
+.header--toggle--darkmode--clicked {
+    animation: toggleAnimationBackgroundDarkMode 1s ease 1 alternate;
+    animation-fill-mode: both;
+}
+
+.header--toggle--darkmode--unclicked {
+    animation: toggleAnimationBackgroundDarkModeUnclicked 1s ease 1 alternate;
+    animation-fill-mode: both;
+}
+
+.header--circle--darkmode {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+@keyframes toggleAnimationBackgroundDarkMode {
+    from {
+        border-color  : var(--dark-color);
+        background-color: var(--dark-color);
+    }
+    to {
+        border-color: white;
+        background-color: white;
+    }
+}
+
+@keyframes toggleAnimationBackgroundDarkModeUnclicked {
+    from {
+        border-color: white;
+        background-color: white;
+    }
+    to {
+        border-color  : var(--dark-color);
+        background-color: var(--dark-color);
+    }
+}
+
+@keyframes toggleAnimationDarkMode {
+    from {
+        background-color: white;
+        left: 0;
+    }
+    to {
+        background-color: var(--dark-color);
+        left: calc(100% - 20px)
+    }
+}
+
+@keyframes toggleAnimationDarkMode {
+    from {
+
+        background-color: var(--dark-color);
+        left: calc(100% - 20px)
+    }
+    to {
+        background-color: white;
+        left: 0;
+    }
+}

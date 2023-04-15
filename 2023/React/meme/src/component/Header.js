@@ -2,7 +2,7 @@
 import React from "react"
  
 import "./Header.css"
-import TrollImg from "../assets/img/troll.png"
+import TrollImg from "../assets/img/img.jpg"
  
 function Header(props){
  
