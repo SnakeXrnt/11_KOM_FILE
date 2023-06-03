@@ -1,0 +1,6 @@
+1. View Contact
+2. Add Contact
+3. Find Contact
+4. Delete Contact
+5. Update Contact
+Q. Quit
